@@ -815,7 +815,7 @@ with tab3:
             </div>
         """, unsafe_allow_html=True)
         
-        with st.expander("🔍 View SQL Query", expanded=False):
+        with st.markdown("###View SQL Query"):
             st.code(sql, language="sql")
         
         result_df = run_query(sql, params)
